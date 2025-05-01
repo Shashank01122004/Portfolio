@@ -1,0 +1,115 @@
+.plus-jakarta-sans-content {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-image: url(images/portfolio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional, makes background stay while scrolling */
+}
+
+.Main-box {
+    background: none;
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of the viewport height */
+    text-align: center;
+}
+
+
+
+.navbar {
+    background-color: rgb(11, 11, 11);
+    display: flex;
+    justify-content: space-between; /* or flex-start, depending on layout */
+    align-items: center;
+}
+
+.navbar-item {
+    margin-left: auto;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar-toggler {
+    color: white;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #ccc; /* Optional hover effect */
+}
+
+.content{
+    color: rgb(244, 247, 244);
+}
+
+.home-content{
+    color: #00FF7F;
+}
+
+#About{
+    background-color:black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#About .img-fluid {
+    width: 200px; 
+    height: 300px;
+    border-radius: 70%;
+    margin-top: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+.card{
+    background-image: url(images/card.jpg);
+}
+
+.card-body{
+    color:white !important;
+}
+
+button{
+    background-color: rgb(1, 1, 31);
+    color: white;
+}
+
+#projects {
+    background-image: url(images/card.jpg);
+  }
+  
+  #contact {
+    min-height: 100vh;              /* Full screen height */
+    display: flex;
+    justify-content: center;        /* Center horizontally */
+    align-items: center;            /* Center vertically */
+    text-align: center; 
+    padding: 2rem;
+    flex-direction: column;         /* Stack children vertically */
+  }
+  
+  #contact-heading{
+    color: aquamarine;
+  }
+
+#contact p{
+    background-color: black;
+    width: 100vh;
+    height: 10rem;
+}
