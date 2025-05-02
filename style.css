@@ -4,12 +4,15 @@
     font-weight: 700;
     font-style: normal;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-image: url(images/portfolio.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Optional, makes background stay while scrolling */
+    background-position:center;
+    background-attachment: scroll; /* Optional, makes background stay while scrolling */
 }
 
 .Main-box {
@@ -58,23 +61,28 @@ body {
     color: #00FF7F;
 }
 
-#About{
-    background-color:black;
+#About {
+    background-color: black;
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
-}
+    padding: 20px; /* Add some padding for better spacing */
+  }
+  
 
-
-#About .img-fluid {
-    width: 200px; 
-    height: 300px;
+  #About .img-fluid {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
     border-radius: 70%;
-    margin-top: 100px;
+    margin-top: 20px; /* Reduce top margin on smaller screens */
     object-fit: cover;
     margin-bottom: 20px;
-}
+  }
+  
+  #About .col-12.col-md-8 {
+    padding: 15px;
+  }
 
 
 .card{
@@ -110,6 +118,7 @@ button{
 
 #contact p{
     background-color: black;
-    width: 100vh;
-    height: 10rem;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
