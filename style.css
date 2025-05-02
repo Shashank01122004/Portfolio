@@ -94,7 +94,7 @@ body {
     flex-wrap: wrap;
     padding: 20px; /* Add some padding for better spacing */
   }
-  
+
   #About strong {
     color: #00FF7F;
     font-weight: bold;
@@ -111,7 +111,7 @@ body {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
   }
-  
+
   #About .col-12.col-md-8 {
     padding: 15px;
   }
@@ -133,23 +133,40 @@ button{
 #projects {
     background-image: url(images/card.jpg);
   }
-  
+
+  /* Optional: Card hover effect */
+#projects .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the technology tags */
+#projects .card-text small.text-muted {
+    font-style: italic;
+    color: aquamarine !important; /* Applied the color here */
+}
+
+
   #contact {
-    min-height: 100vh;              /* Full screen height */
+    min-height: 100vh;           /* Full screen height */
     display: flex;
-    justify-content: center;        /* Center horizontally */
-    align-items: center;            /* Center vertically */
-    text-align: center; 
+    justify-content: center;       /* Center horizontally */
+    align-items: center;           /* Center vertically */
+    text-align: center;
     padding: 2rem;
-    flex-direction: column;         /* Stack children vertically */
+    flex-direction: column;       /* Stack children vertically */
   }
-  
+
   #contact-heading{
     color: aquamarine;
   }
 
 #contact p{
-    background-color: black;
     width: 100%;
     max-width: 500px;
     height: auto;
